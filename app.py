@@ -41,9 +41,9 @@ def preprocess_image(image_path):
 def index():
     return render_template('home.html')
 
-@app.route('/tool')
-def tool():
-    return render_template('tool.html')
+@app.route('/analysis')
+def analysis():
+    return render_template('analysis.html')
 
 @app.route('/about')
 def about():
