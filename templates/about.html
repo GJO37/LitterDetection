@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Litter Detection | About</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">Litter Detection</div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about" class="active">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>About</h1>
+            <p class="subtitle">AI-Powered Litter Detection</p>
+        </header>
+
+        <section class="about-section">
+            <p>
+                An AI-powered litter detection platform designed to evaluate cleanliness from uploaded images.
+            </p>
+            <p>
+                Using deep learning and computer vision techniques, 
+                EcoScope classifies environments as either Clean or Dirty, 
+                helping users better understand and monitor environmental conditions.
+            </p>
+            <p>
+                Built using TensorFlow and Flask, the platform provides a simple and accessible interface 
+                for image-based cleanliness assessment.
+            </p>
+            <p>
+                Our goal is to encourage environmental awareness through practical AI tools that are easy to use 
+                and accessible to everyone.
+            </p>
+        </section>
+    </div>
+</body>
+</html>

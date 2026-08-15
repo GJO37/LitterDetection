@@ -1,0 +1,17 @@
+# Virtual Environment
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Dataset
+dataset/
+
+# Trained Model
+model.keras
+
+# Uploaded Images
+static/uploads/*

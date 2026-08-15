@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Litter Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">Litter Detection</div>
+        <ul class="nav-links">
+            <li><a href="/" class="active">Home</a></li>
+            <li><a href="/about">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <h1>LITTER DETECTION</h1>
+        <p class="hero-subtitle">AI for a Cleaner Tomorrow</p>
+        <a href="/tool" class="cta-btn">Analyze Images</a>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const heroTitle = document.querySelector('.hero h1');
+            heroTitle.style.opacity = 0;
+            heroTitle.style.transform = 'translateY(20px)';
+            setTimeout(() => {
+                heroTitle.style.transition = 'opacity 1s ease, transform 1s ease';
+                heroTitle.style.opacity = 1;
+                heroTitle.style.transform = 'translateY(0)';
+            }, 100);
+        });
+    </script>
+</body>
+</html>
