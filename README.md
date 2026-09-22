@@ -62,15 +62,10 @@ pip install -r requirements.txt
 python app.py
 ```
 
-6. Open your browser and navigate to:
-```
-http://127.0.0.1:5000/
-```
-
 
 ## 🛒 PREREQUISITES
 
-* Make sure to provide correct directory path of the datasets to both `model.py` and `app.py`
+* Make sure to provide correct path of the datasets to both `model.py` and `app.py`
 * The trained model is not included in the repository. To train the model, open `main.ipynb` notebook and train the model
 * After training, the model should be saved as `model_weights.pt` in the root directory
 
